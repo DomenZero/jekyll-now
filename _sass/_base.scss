@@ -191,12 +191,12 @@ pre {
 	padding: 0;
 	list-style: none;
 }
-.tagcloud ul li {
+.tagcloud span {
 	display: inline-block;
 	margin: 0 0 .3em 1em;
 	padding: 0;
 }
-.tagcloud ul li a {
+.tagcloud span a {
 	position: relative;
 	display: inline-block;
 	height: 30px;
@@ -210,7 +210,7 @@ pre {
 	-webkit-transition: .2s;
 	transition: .2s;
 }
-.tagcloud ul li a::before {
+.tagcloud span a::before {
 	position: absolute;
 	top: 0;
 	left: -15px;
@@ -223,7 +223,7 @@ pre {
 	-webkit-transition: .2s;
 	transition: .2s;
 }
-.tagcloud ul li a::after {
+.tagcloud span a::after {
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -236,18 +236,11 @@ pre {
 	background-color: #fff;
 	border-radius: 100%;
 }
-.tagcloud ul li span {
-	display: block;
-	max-width: 100px;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-}
-.tagcloud ul li a:hover {
+.tagcloud span a:hover {
 	background-color: #555;
 	color: #fff;
 }
-.tagcloud ul li a:hover::before {
+.tagcloud span a:hover::before {
 	border-right-color: #555;
 }
 
